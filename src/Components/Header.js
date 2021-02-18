@@ -21,6 +21,7 @@ const Header = () => {
                 <li className="column">وارد شوید</li>
             </ul>
             </div>
+            <div className="wrapper-menu">
             <ul className="menu" >
                 <li>مردانه</li>
                 <li>زنانه</li>
@@ -28,6 +29,7 @@ const Header = () => {
                 <li>برندها</li>
                 <li>کارت هدیه</li>
             </ul>
+            </div>
         </div>
     )
 }
