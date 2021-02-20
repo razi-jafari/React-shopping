@@ -56,3 +56,9 @@ justify-content: center;
     margin: 0 12px;
     
 }
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}

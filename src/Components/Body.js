@@ -1,7 +1,9 @@
 import React from 'react';
-import Header from "../Components/Header";
+import Product from "./Product";
+import dress1 from "../Assets/Images/1.jpeg";
+import dress2 from "../Assets/Images/2.jpeg"
 
-class Manager extends React.Component{
+class Body extends React.Component{
     state = {
         product : [
             {
@@ -12,7 +14,7 @@ class Manager extends React.Component{
                 discountValue : 235000,
                 hasOff : true,
                 offValue : 51,
-                image  : "/images/products/1.jpg",
+                image  : dress1,
                 price : 90000
             },
             {
@@ -23,31 +25,31 @@ class Manager extends React.Component{
                 discountValue : 206000,
                 hasOff : true,
                 offValue : 30,
-                image  : "/images/products/111356841.jpg",
-                price : 144000
+                image  : dress2,
+                price : 144000,
             },
-            {
-                id : 3,
-                name : "پیراهن جین مردانه - مانگو",
-                brand : "Mango",
-                hasDiscount : false,
-                discountValue : 0,
-                hasOff : false,
-                offValue : 0,
-                image  : "/images/products/105705191.jpg",
-                price : 890000
-            },
-            {
-                id : 4,
-                name : "پیراهن مردانه فرد کد p.baz.244 ",
-                brand : "FRED",
-                hasDiscount : true,
-                discountValue : 59000,
-                hasOff : true,
-                offValue : 51,
-                image  : "/images/products/113013122.jpg",
-                price : 29000
-            },
+            // {
+            //     id : 3,
+            //     name : "پیراهن جین مردانه - مانگو",
+            //     brand : "Mango",
+            //     hasDiscount : false,
+            //     discountValue : 0,
+            //     hasOff : false,
+            //     offValue : 0,
+            //     image  : "/images/products/105705191.jpg",
+            //     price : 890000
+            // },
+            // {
+            //     id : 4,
+            //     name : "پیراهن مردانه فرد کد p.baz.244 ",
+            //     brand : "FRED",
+            //     hasDiscount : true,
+            //     discountValue : 59000,
+            //     hasOff : true,
+            //     offValue : 51,
+            //     image  : "/images/products/113013122.jpg",
+            //     price : 29000
+            // },
 
         ],
         basket : {
@@ -69,11 +71,11 @@ class Manager extends React.Component{
     render(){
         return(
             <div>
-                <Header/>
+                <Product product = {this.state.product}/>
             </div>
         )
     }
 }
 
 
-export default Manager;
+export default Body;
