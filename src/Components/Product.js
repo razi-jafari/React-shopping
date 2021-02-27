@@ -1,17 +1,16 @@
-import React,{ useEffect } from 'react';
+import { render } from '@testing-library/react';
+import React, { useEffect } from 'react';
 import '../Assets/Styles/Product.css'
 
-const Product = (props)=>{
-
-    useEffect(()=>{
-        console.log(props);
-    },[])
+const Product = (props)=> {
+    useEffect(()=>{},[])
     return(
         <div>
             <div className="wrapper-product" id="products">
                 {props.product.map((item)=>(
                     
-                        <div className="product"><img src={item.image} className="img-product"/>
+                        <div className="product" key={item.id}>
+                        <img src={item.image} className="img-product"/>
                         <p className="brand">{item.brand}</p>
                         <div className="footer-des">
                             <p className="describ">{item.name}</p>
@@ -29,4 +28,6 @@ const Product = (props)=>{
         
     )
 }
+
+   
 export default Product;

@@ -13,8 +13,9 @@
 .brand{
     text-align: right;
 }
-.img-product{
+.img-product{max-width: 100%;
    width: 300px;
+   
    height: auto;
 }
 .footer-des{

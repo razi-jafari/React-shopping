@@ -5,19 +5,30 @@
 
 }
 .input-container{
-    position:relative;
+    position: relative;
+}
+.input-search{
+    
     padding:0 0 0 20px;
     margin:0 70px;
     direction: rtl;
     width: 200px;
 }
-.input-img{
+.fa-search{
+    position: absolute;
+    top: 65%;
+    right: 22%;
+}
+.login-in-header{
+    cursor: pointer;
+}
+/* .input-img{
     position:absolute;
     bottom:2px;
     right:5px;
     width:24px;
     height:24px;
-}
+} */
 .search-header{
     margin: 30px 0 0 90px;
     direction: rtl;
@@ -60,5 +71,10 @@ justify-content: center;
     display: flex;
     justify-content: space-around;
     
+    
+}
+.collapsible__trigger{
+    color: red;
+    cursor: pointer;
     
 }
